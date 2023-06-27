@@ -1,12 +1,15 @@
+let count1 = 0;
+let count2 = 0;
+
 for (let i = 0; i < 13; i++) {
-  if(i % 2 == 0) {
-		console.log(`Четное число: ${i}`);
-		continue;
+  if(i % 2 === 0) {
+		count1++;
 	}
-	else if(i % 2 == 1){
-		console.log(`Нечетное число: ${i}`);
-		continue;
+	else if(i % 2 === 1){
+		count2++;
 	}
 }
+
+console.log(`Четных всего: ${count1}, нечетных: ${count2}`)
 
 
